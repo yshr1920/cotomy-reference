@@ -1,41 +1,40 @@
-# Website
+# Cotomy Reference Site
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This repository contains the Cotomy reference site, split out from the
+`reference-site` directory in the main `cotomy` repository.
 
-## Installation
+The site is built with [Docusaurus](https://docusaurus.io/).
 
-```bash
-yarn
-```
+## Requirements
+
+- Node.js 20 or later
+- npm
+
+GitHub Actions uses Node.js 22 for Pages deployment.
 
 ## Local Development
 
 ```bash
-yarn start
+npm install
+npm run start
 ```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
 ## Build
 
 ```bash
-yarn build
+npm run build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+The static site is generated into `build/`.
 
 ## Deployment
 
-Using SSH:
+The repository is configured for GitHub Pages through GitHub Actions:
 
-```bash
-USE_SSH=true yarn deploy
-```
+1. Push this repository to GitHub.
+2. In repository settings, set Pages source to **GitHub Actions**.
+3. Push to `main`; the workflow builds Docusaurus and deploys `build/`.
 
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+Do not add `static/CNAME` until the domain cutover. First deploy and verify the
+site on the temporary `github.io` URL, then configure `cotomy.net` in Pages
+settings and move DNS after the new deployment is confirmed.

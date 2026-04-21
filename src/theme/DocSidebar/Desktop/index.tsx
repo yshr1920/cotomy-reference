@@ -5,6 +5,7 @@ import clsx from 'clsx';
 import Logo from '@theme/Logo';
 import CollapseButton from '@theme/DocSidebar/Desktop/CollapseButton';
 import Content from '@theme/DocSidebar/Desktop/Content';
+import type {Props} from '@theme/DocSidebar/Desktop';
 
 import styles from './styles.module.css';
 
@@ -26,12 +27,7 @@ export default function DocSidebarDesktop({
   sidebar,
   onCollapse,
   isHidden,
-}: {
-  path: string;
-  sidebar: unknown;
-  onCollapse: () => void;
-  isHidden: boolean;
-}): React.JSX.Element {
+}: Props): React.JSX.Element {
   const {
     navbar: {hideOnScroll},
     docs: {

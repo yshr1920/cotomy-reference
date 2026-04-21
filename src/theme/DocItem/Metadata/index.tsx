@@ -13,7 +13,7 @@ export default function DocItemMetadata(): ReactNode {
   const description = metadata.description ?? frontMatter.description ?? '';
   const permalink = metadata.permalink;
   const canonicalUrl = toCanonicalUrl(permalink);
-  const isOverview = permalink === '/' || metadata.unversionedId === 'reference/overview';
+  const isOverview = permalink === '/' || metadata.id === 'reference/overview';
 
   const structuredData = isOverview
     ? {

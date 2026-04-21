@@ -24,7 +24,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'yshr1920', // Usually your GitHub org/user name.
-  projectName: 'cotomy', // Usually your repo name.
+  projectName: 'cotomy-reference', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 

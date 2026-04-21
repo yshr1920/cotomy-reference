@@ -1,5 +1,5 @@
 {
-  "name": "reference-site",
+  "name": "cotomy-reference",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -29,6 +29,9 @@
     "@docusaurus/tsconfig": "3.9.2",
     "@docusaurus/types": "3.9.2",
     "typescript": "^5.9.3"
+  },
+  "overrides": {
+    "webpack": "5.101.3"
   },
   "browserslist": {
     "production": [

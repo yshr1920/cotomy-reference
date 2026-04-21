@@ -2,16 +2,45 @@ import NavbarItem from '@theme/NavbarItem';
 import IconExternalLink from '@theme/Icon/ExternalLink';
 import {useThemeConfig} from '@docusaurus/theme-common';
 import {useNavbarMobileSidebar} from '@docusaurus/theme-common/internal';
+import type {ComponentProps, ReactNode} from 'react';
 import styles from './styles.module.css';
 
 type NavbarItemConfig = {
   position?: 'left' | 'right';
-  type?: string;
+  type?:
+    | 'default'
+    | 'dropdown'
+    | 'localeDropdown'
+    | 'search'
+    | 'html'
+    | 'doc'
+    | 'docSidebar'
+    | 'docsVersion'
+    | 'docsVersionDropdown';
+  href?: string;
+  label?: ReactNode;
   [key: string]: unknown;
 };
 
 function useNavbarItems(): NavbarItemConfig[] {
   return useThemeConfig().navbar.items as NavbarItemConfig[];
+}
+
+function renderNavbarItem(
+  item: NavbarItemConfig,
+  key: string,
+  onClick: () => void,
+): ReactNode {
+  const navbarItemProps = item as ComponentProps<typeof NavbarItem>;
+
+  return (
+    <NavbarItem
+      {...navbarItemProps}
+      mobile
+      onClick={onClick}
+      key={key}
+    />
+  );
 }
 
 export default function NavbarMobilePrimaryMenu(): React.JSX.Element {
@@ -37,25 +66,15 @@ export default function NavbarMobilePrimaryMenu(): React.JSX.Element {
   return (
     <>
       <ul className="menu__list">
-        {leftItems.map((item, index) => (
-          <NavbarItem
-            mobile
-            {...item}
-            onClick={() => mobileSidebar.toggle()}
-            key={`left-${index}`}
-          />
-        ))}
+        {leftItems.map((item, index) =>
+          renderNavbarItem(item, `left-${index}`, () => mobileSidebar.toggle()),
+        )}
       </ul>
       {rightItems.length > 0 && (
         <ul className="menu__list navbar-sidebar__group">
-          {rightItems.map((item, index) => (
-            <NavbarItem
-              mobile
-              {...item}
-              onClick={() => mobileSidebar.toggle()}
-              key={`right-${index}`}
-            />
-          ))}
+          {rightItems.map((item, index) =>
+            renderNavbarItem(item, `right-${index}`, () => mobileSidebar.toggle()),
+          )}
         </ul>
       )}
     </>
