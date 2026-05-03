@@ -5,6 +5,8 @@ description: Start with Cotomy installation, first UI, events, forms, API integr
 
 # Getting Started
 
+Introduction guide — [← Back to Concept](/) | [Reference](/reference/) | [Comparison](/comparison)
+
 This guide is a short, practical entry point to Cotomy. Each page builds on the previous one.
 For design essays and implementation notes around these topics, see the [Cotomy Blog](https://blog.cotomy.net/).
 
@@ -118,6 +120,11 @@ CotomyPageController ..> CotomyWindow : lifecycle
 - [Ajax Form](./getting-started/06-ajax-form.md)
 - [Page Control](./getting-started/07-page-control.md)
 - [Debugging and Tips](./getting-started/08-debugging-and-tips.md)
+
+### Related Blog Articles
+
+- Forms: [CotomyForm in Practice](https://blog.cotomy.net/posts/usage/cotomy-form-in-practice/) — form class usage and override points
+- API: [How Cotomy Works](https://blog.cotomy.net/series/usage/) — API integration and usage notes
 
 ## Next
 

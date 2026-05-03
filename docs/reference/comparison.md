@@ -6,6 +6,8 @@ description: Compare Cotomy with React, Vue, Alpine, and jQuery for DOM state, l
 
 # Comparison
 
+Technical comparison page — for the background problem this addresses, see the [Problem section](/#problem) on the top page.
+
 ## Cotomy Position
 
 Cotomy is a DOM-oriented runtime layer for form-driven, page-scoped systems.
@@ -97,6 +99,11 @@ For design rationale and practical usage notes, see the [Cotomy Blog](https://bl
 | High-frequency re-render UIs | Not a render-optimization framework |
 | Highly animated UI | Not optimized for frequent visual re-render cycles |
 | Canvas / game UIs | DOM-centric design |
+
+---
+
+For setup and implementation, see [Getting Started](/reference/getting-started/).
+For real-world examples, see the [Cotomy Practical Series](https://blog.cotomy.net/series/practical/) on the Blog.
 
 ## Why Cotomy Is Not a Component-Rendering SPA Framework
 

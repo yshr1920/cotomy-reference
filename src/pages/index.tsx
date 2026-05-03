@@ -94,6 +94,9 @@ export default function Home(): ReactElement {
               <p className={styles.heroDescription}>
                 A TypeScript-first runtime for screen-oriented UI, form workflows, and page lifecycle control.
               </p>
+              <p>
+                This page covers the concept, design rationale, and core components of Cotomy.
+              </p>
               <div className={styles.installBlock}>
                 <p className={styles.installLabel}>Install from npm</p>
                 <CodeBlock language="bash">{'npm i cotomy'}</CodeBlock>
@@ -119,7 +122,7 @@ export default function Home(): ReactElement {
           </div>
         </section>
 
-        <section className={styles.section}>
+        <section id="problem" className={styles.section}>
           <div className="container">
             <div className={styles.sectionHeader}>
               <p className={styles.sectionLabel}>Problem</p>
@@ -149,6 +152,9 @@ export default function Home(): ReactElement {
                 As the application grows, a single runtime can accumulate more and
                 more cross-screen responsibilities in the same place.
               </p>
+              <p>
+                For a structural comparison with other frameworks, see the <Link to="/comparison">Comparison</Link> page.
+              </p>
             </div>
           </div>
         </section>
@@ -172,6 +178,9 @@ export default function Home(): ReactElement {
               </p>
               <h3 className={styles.subheading}>Core ideas</h3>
               <BulletList items={approaches} />
+              <p>
+                For practical usage and setup steps, see the <Link to="/reference/getting-started/">Getting Started</Link> guide.
+              </p>
             </div>
           </div>
         </section>
@@ -193,6 +202,9 @@ export default function Home(): ReactElement {
                 </article>
               ))}
             </div>
+            <p>
+              For component examples in real screens, see the <Link href="https://blog.cotomy.net/series/usage/">Blog</Link>.
+            </p>
           </div>
         </section>
 
