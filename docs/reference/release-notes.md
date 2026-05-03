@@ -7,6 +7,14 @@ description: Cotomy version history and architectural milestones.
 
 Cotomy version history and architectural milestones.
 
+### v2.0.3 (2026-04-30 03:49 UTC)
+
+Downloads: [ZIP](https://github.com/yshr1920/cotomy/archive/refs/tags/v2.0.3.zip) | [TAR.GZ](https://github.com/yshr1920/cotomy/archive/refs/tags/v2.0.3.tar.gz)
+
+- Completed bind type renderer lookup fixes for overridden renderer maps.
+- Kept custom `data-cotomy-bindtype` matching case-insensitive during primitive binding.
+- Supersedes v2.0.2, which briefly covered only part of this lookup path. v2.0.3 is the recommended v2 patch target.
+
 ### v2.0.1 (2026-04-04 12:48 UTC)
 
 Downloads: [ZIP](https://github.com/yshr1920/cotomy/archive/refs/tags/v2.0.1.zip) | [TAR.GZ](https://github.com/yshr1920/cotomy/archive/refs/tags/v2.0.1.tar.gz)
