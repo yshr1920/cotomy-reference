@@ -7,6 +7,16 @@ description: Cotomy version history and architectural milestones.
 
 Cotomy version history and architectural milestones.
 
+### v2.0.4 (2026-05-06 13:32 UTC)
+
+Package: [npm](https://www.npmjs.com/package/cotomy/v/2.0.4)
+Downloads: [ZIP](https://github.com/yshr1920/cotomy/archive/refs/tags/v2.0.4.zip) | [TAR.GZ](https://github.com/yshr1920/cotomy/archive/refs/tags/v2.0.4.tar.gz)
+
+- Improved scoped CSS handling in `CotomyElement`.
+- Automatically prefixes every selector with the element scope when `[root]` is omitted, instead of only prefixing the first rule.
+- Preserves explicit `[root]` selectors and scopes nested style rules inside `@media`, `@supports`, `@container`, `@layer`, and `@document` while leaving non-style at-rules such as `@keyframes` unchanged.
+- Added regression coverage for multi-selector scoped CSS, nested rules, and non-style at-rule preservation.
+
 ### v2.0.3 (2026-04-30 03:49 UTC)
 
 Downloads: [ZIP](https://github.com/yshr1920/cotomy/archive/refs/tags/v2.0.3.zip) | [TAR.GZ](https://github.com/yshr1920/cotomy/archive/refs/tags/v2.0.3.tar.gz)

@@ -143,6 +143,23 @@ For the layer model behind this flow, see [Architecture](/architecture/).
 ---
 ## Release Notes
 
+### v2.0.4 (2026-05-06 13:32 UTC)
+
+Package: [npm](https://www.npmjs.com/package/cotomy/v/2.0.4)
+Downloads: [ZIP](https://github.com/yshr1920/cotomy/archive/refs/tags/v2.0.4.zip) | [TAR.GZ](https://github.com/yshr1920/cotomy/archive/refs/tags/v2.0.4.tar.gz)
+
+- Improved scoped CSS handling in `CotomyElement`.
+- Automatically prefixes every selector with the element scope when `[root]` is omitted, including multi-selector CSS and nested style rules.
+- Preserves non-style at-rules such as `@keyframes` unchanged.
+
+### v2.0.3 (2026-04-30 03:49 UTC)
+
+Downloads: [ZIP](https://github.com/yshr1920/cotomy/archive/refs/tags/v2.0.3.zip) | [TAR.GZ](https://github.com/yshr1920/cotomy/archive/refs/tags/v2.0.3.tar.gz)
+
+- Completed bind type renderer lookup fixes for overridden renderer maps.
+- Kept custom `data-cotomy-bindtype` matching case-insensitive during primitive binding.
+- Supersedes v2.0.2, which briefly covered only part of this lookup path. v2.0.3 is the recommended v2 patch target.
+
 ### v2.0.1 (2026-04-04 12:48 UTC)
 
 Downloads: [ZIP](https://github.com/yshr1920/cotomy/archive/refs/tags/v2.0.1.zip) | [TAR.GZ](https://github.com/yshr1920/cotomy/archive/refs/tags/v2.0.1.tar.gz)
