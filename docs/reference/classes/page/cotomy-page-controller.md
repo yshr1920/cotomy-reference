@@ -28,6 +28,8 @@ Base class for page-level orchestration and form management.
 | setForm(form) | Registers and initializes a form. |
 | getForm(id, type?) | Retrieves a registered form by id. |
 | forms | List of registered forms. |
-| restoreAsync() | Reloads forms on BFCache restoration. |
+| restoreAsync() | Reloads forms on BFCache restoration or `back_forward` navigation restoration. |
 | initializeAsync() | Initialization hook for subclasses. |
 | url | CotomyUrl for the current location. |
+
+During initialization, Cotomy listens for `pageshow`. It calls `restoreAsync()` when `pageshow.persisted` is true or when the current navigation entry reports `type === "back_forward"`.

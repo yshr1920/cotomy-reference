@@ -161,6 +161,7 @@ responses to the UI automatically, use a form-based approach with
 CotomyViewRenderer. This is covered in the Ajax Form section.
 
 CotomyViewRenderer applies response JSON to elements marked with data-cotomy-bind.
+It can render either a CotomyApiResponse or a plain object payload, so you can use it after CotomyApi calls or after manually prepared data.
 Bind name style can be switched with CotomyBracketBindNameGenerator or CotomyDotBindNameGenerator.
 See [CotomyViewRendererの詳細](../classes/api/cotomy-view-renderer.md), [CotomyBracketBindNameGeneratorの詳細](../classes/api/cotomy-bracket-bind-name-generator.md), and [CotomyDotBindNameGeneratorの詳細](../classes/api/cotomy-dot-bind-name-generator.md).
 

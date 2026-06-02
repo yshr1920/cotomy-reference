@@ -143,6 +143,15 @@ For the layer model behind this flow, see [Architecture](/architecture/).
 ---
 ## Release Notes
 
+### v2.0.5 (2026-06-02 14:22 UTC)
+
+Package: [npm](https://www.npmjs.com/package/cotomy/v/2.0.5)
+Downloads: [ZIP](https://github.com/yshr1920/cotomy/archive/refs/tags/v2.0.5.zip) | [TAR.GZ](https://github.com/yshr1920/cotomy/archive/refs/tags/v2.0.5.tar.gz)
+
+- Updated `CotomyViewRenderer.applyAsync` to accept either a `CotomyApiResponse` or a plain object payload.
+- Improved page restoration so `CotomyPageController.restoreAsync()` also runs for `back_forward` navigations.
+- Added regression coverage for BFCache/page restoration detection.
+
 ### v2.0.4 (2026-05-06 13:32 UTC)
 
 Package: [npm](https://www.npmjs.com/package/cotomy/v/2.0.4)

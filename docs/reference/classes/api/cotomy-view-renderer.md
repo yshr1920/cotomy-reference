@@ -25,8 +25,10 @@ Applies API response data to DOM elements using data-cotomy-bind and custom rend
 | Method | Description |
 | --- | --- |
 | renderer(type, callback) | Registers a custom renderer for a bind type. |
-| applyAsync(response) | Clears bound elements, then applies response JSON. |
+| applyAsync(responseOrPayload) | Clears bound elements, then applies response JSON from a `CotomyApiResponse` or plain object payload. |
 | resetDefaultBindNameGenerator() (static) | Resets static default bind name generator to bracket style. |
+
+`applyAsync` accepts a `CotomyApiResponse` returned by `CotomyApi` or a plain object. When a `CotomyApiResponse` is passed, Cotomy checks `available` and reads the payload through `objectAsync()`. When a plain object is passed, Cotomy renders that object directly.
 
 **Protected Members (for subclassing)**
 
