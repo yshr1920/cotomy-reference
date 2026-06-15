@@ -86,7 +86,7 @@ const config: Config = {
         name: 'Y. Arakawa',
         url: 'https://cotomy.net/',
         email: 'yshr1920@gmail.com',
-        sameAs: ['https://blog.cotomy.net/', 'https://github.com/yshr1920/cotomy'],
+        sameAs: ['https://github.com/yshr1920/cotomy'],
       }),
     },
   ],
@@ -184,11 +184,6 @@ const config: Config = {
           activeBaseRegex: '^/privacy-policy/?$',
         },
         {
-          href: 'https://blog.cotomy.net/',
-          position: 'right',
-          label: 'Blog',
-        },
-        {
           href: 'https://github.com/yshr1920/cotomy',
           position: 'right',
           label: 'GitHub',
@@ -198,15 +193,6 @@ const config: Config = {
     footer: {
       style: 'dark',
       links: [
-        {
-          title: 'Blog',
-          items: [
-            {
-              label: 'Cotomy Blog',
-              href: 'https://blog.cotomy.net/',
-            },
-          ],
-        },
         {
           title: 'GitHub',
           items: [

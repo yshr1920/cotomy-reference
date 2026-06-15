@@ -114,9 +114,6 @@ export default function Home(): ReactElement {
                 >
                   GitHub
                 </Link>
-                <Link className={styles.tertiaryAction} href="https://blog.cotomy.net/">
-                  Blog
-                </Link>
               </div>
             </div>
           </div>
@@ -202,9 +199,6 @@ export default function Home(): ReactElement {
                 </article>
               ))}
             </div>
-            <p>
-              For component examples in real screens, see the <Link href="https://blog.cotomy.net/series/usage/">Blog</Link>.
-            </p>
           </div>
         </section>
 
@@ -301,14 +295,6 @@ export default function Home(): ReactElement {
               >
                 <span className={styles.resourceTitle}>GitHub Repository</span>
                 <span className={styles.resourceMeta}>https://github.com/yshr1920/cotomy</span>
-              </Link>
-              <Link className={styles.resourceCard} href="https://blog.cotomy.net/series/design/">
-                <span className={styles.resourceTitle}>Design Philosophy Articles</span>
-                <span className={styles.resourceMeta}>https://blog.cotomy.net/series/design/</span>
-              </Link>
-              <Link className={styles.resourceCard} href="https://blog.cotomy.net/series/usage/">
-                <span className={styles.resourceTitle}>Technical Articles</span>
-                <span className={styles.resourceMeta}>https://blog.cotomy.net/series/usage/</span>
               </Link>
             </div>
           </div>

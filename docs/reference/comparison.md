@@ -57,7 +57,6 @@ starts. It could be server-rendered HTML, static HTML, or HTML produced by a bui
 
 Use Cotomy when you want HTML/DOM to stay central and need runtime safety for forms and screen-level workflows.
 Use a component framework when you want a centralized render model and a JS state tree as the source of truth.
-For design rationale and practical usage notes, see the [Cotomy Blog](https://blog.cotomy.net/).
 
 ## Responsibility Comparison
 
@@ -103,7 +102,6 @@ For design rationale and practical usage notes, see the [Cotomy Blog](https://bl
 ---
 
 For setup and implementation, see [Getting Started](/reference/getting-started/).
-For real-world examples, see the [Cotomy Practical Series](https://blog.cotomy.net/series/practical/) on the Blog.
 
 ## Why Cotomy Is Not a Component-Rendering SPA Framework
 

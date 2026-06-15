@@ -27,8 +27,8 @@ export default function ContactPage(): React.JSX.Element {
           <textarea id="contact-message" name="message" required />
 
           <input type="hidden" name="page_url" value={pageUrl} />
-          <input type="hidden" name="_next" value="https://blog.cotomy.net/thanks/" />
-          <input type="hidden" name="_subject" value="Blog Contact" />
+          <input type="hidden" name="_next" value="https://cotomy.net/thanks/" />
+          <input type="hidden" name="_subject" value="Site Contact" />
           <input type="hidden" name="_redirect" value="/thanks/" />
 
           <button type="submit">Send</button>

@@ -26,7 +26,6 @@ Start here if you want the short version:
 Suggested path: [Architecture](/architecture/) -> [Use Cases](/use-cases/) -> [Design Philosophy](/design-philosophy/) -> [Getting Started](/reference/getting-started/)
 
 Key references: [CotomyElement](/reference/classes/view/cotomy-element/), [CotomyApiForm](/reference/classes/forms/cotomy-api-form/), [CotomyWindow](/reference/classes/view/cotomy-window/), and the full [Class Index](/reference/).
-For design notes and practical write-ups, visit the [Cotomy Blog](https://blog.cotomy.net/).
 
 ---
 
@@ -400,10 +399,3 @@ Email: yshr1920@gmail.com
 
 Use the sidebar to navigate to each class, interface, and utility.  
 Each page describes purpose, methods, and expected behavior.
-
-## Practical Guides
-
-For real-world usage and architectural discussions:
-
-- [Problem #5 - Business Operations Need a Protocol](https://blog.cotomy.net/posts/problem-5-api-driven-entities-ui-contract-stability/)
-- [Problem #6 - Runtime Boundaries and Operational Safety](https://blog.cotomy.net/posts/problem-6-runtime-boundaries-operational-safety/)

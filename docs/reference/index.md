@@ -8,7 +8,6 @@ Cotomy is a DOM-first UI runtime for screen-oriented business systems.
 It is designed for admin systems, internal tools, and form-heavy business screens where the DOM remains the primary UI model.
 
 This page lists all available classes in the Cotomy reference.
-For design and architectural context behind these APIs, visit the [Cotomy Blog](https://blog.cotomy.net/).
 
 ## Before You Browse the API
 
