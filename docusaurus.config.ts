@@ -154,12 +154,6 @@ const config: Config = {
           activeBaseRegex: '^/reference/getting-started(?:/|$)',
         },
         {
-          to: '/razorpages/',
-          position: 'left',
-          label: 'Templates',
-          activeBaseRegex: '^/razorpages/?$',
-        },
-        {
           to: '/reference/',
           position: 'left',
           label: 'Reference',
