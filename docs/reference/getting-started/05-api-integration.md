@@ -14,6 +14,10 @@ Use this when you need to:
 - Trigger actions from buttons or UI elements
 - Fetch reference data for UI components
 
+These responsibilities are separate: native HTML forms use browser
+submission, Cotomy-managed forms intercept submit, and CotomyApi performs API
+communication without requiring a form.
+
 ## When to Use CotomyApi
 
 Use CotomyApi whenever the page needs to communicate with the server outside
@@ -163,7 +167,7 @@ CotomyViewRenderer. This is covered in the Ajax Form section.
 CotomyViewRenderer applies response JSON to elements marked with data-cotomy-bind.
 It can render either a CotomyApiResponse or a plain object payload, so you can use it after CotomyApi calls or after manually prepared data.
 Bind name style can be switched with CotomyBracketBindNameGenerator or CotomyDotBindNameGenerator.
-See [CotomyViewRendererの詳細](../classes/api/cotomy-view-renderer.md), [CotomyBracketBindNameGeneratorの詳細](../classes/api/cotomy-bracket-bind-name-generator.md), and [CotomyDotBindNameGeneratorの詳細](../classes/api/cotomy-dot-bind-name-generator.md).
+See [CotomyViewRenderer](../classes/api/cotomy-view-renderer.md), [CotomyBracketBindNameGenerator](../classes/api/cotomy-bracket-bind-name-generator.md), and [CotomyDotBindNameGenerator](../classes/api/cotomy-dot-bind-name-generator.md).
 
 ## What just happened?
 

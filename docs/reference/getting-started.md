@@ -72,19 +72,19 @@ predictable page modules.
 
 ## Smallest Useful Mental Model
 
-This is the smallest useful flow to keep in mind when starting with Cotomy:
+For ordinary GET or POST navigation, start with a native HTML form:
 
-```ts
-const form = new CotomyForm({
-  html: /* html */`<form><input name="code" /><button type="submit">Save</button></form>`
-});
-
-form.initialize();
+```html
+<form action="/items" method="post">
+  <input name="code" />
+  <button type="submit">Save</button>
+</form>
 ```
 
-- `CotomyForm` standardizes form and API interaction
-- Lifecycle and event cleanup are tracked by the runtime
-- The DOM remains the primary UI state
+No CotomyForm is required when browser submission and page navigation are the
+desired behavior. Use CotomyForm or one of its subclasses only when Cotomy
+must intercept and control submission, such as GET query handling or API/Ajax
+submission.
 
 ## Architecture Map
 
@@ -104,7 +104,7 @@ CotomyForm <|-- CotomyApiForm
 CotomyApiForm <|-- CotomyEntityApiForm
 CotomyEntityApiForm <|-- CotomyEntityFillApiForm
 
-CotomyForm ..> CotomyApi : submits
+CotomyApiForm ..> CotomyApi : submits
 CotomyPageController o-- CotomyForm : manages
 CotomyPageController ..> CotomyWindow : lifecycle
 ```

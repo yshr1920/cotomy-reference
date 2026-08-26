@@ -5,7 +5,9 @@ sidebar_position: 2
 
 # CotomyQueryForm
 
-Form that submits via query string navigation (GET).
+Cotomy-managed GET form that builds a query string and controls navigation.
+Use a native `<form method="get">` instead when Cotomy does not need to control
+the submission.
 
 **Methods**
 

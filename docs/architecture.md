@@ -24,7 +24,7 @@ flowchart TD
 | --- | --- |
 | **Application code** | Business rules, page behavior, API decisions, and workflow logic |
 | **CotomyPageController** | Coordinates page lifecycle, navigation timing, and page-level orchestration |
-| **CotomyForm / CotomyElement** | Encapsulates DOM operations, event registration, form handling, and runtime safety |
+| **CotomyForm / CotomyElement** | Encapsulates DOM operations, event registration, Cotomy-managed form handling, and runtime safety |
 | **DOM** | The primary UI state and the visible structure users interact with |
 
 ## DOM as Primary State
@@ -75,7 +75,7 @@ CotomyElement can attach scoped CSS together with markup.
 The architectural goal is not "more abstraction." It is better boundaries.
 
 - Application code stays focused on business behavior
-- Runtime code handles lifecycle, events, and form structure
+- Runtime code handles lifecycle, events, and Cotomy-managed form structure
 - The DOM remains inspectable with normal browser tools
 
 ## Where to Go Next

@@ -32,7 +32,7 @@ const runtimeComponents: SectionItem[] = [
   },
   {
     title: 'CotomyForm',
-    description: 'A unified runtime abstraction for form submission and state handling.',
+    description: 'A base abstraction for forms whose submission is controlled by Cotomy.',
   },
   {
     title: 'CotomyApi',

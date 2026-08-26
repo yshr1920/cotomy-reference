@@ -5,7 +5,9 @@ sidebar_position: 4
 
 # CotomyApiForm
 
-Form that submits to an API endpoint and surfaces failure events.
+Cotomy-managed form that intercepts submission, sends FormData to an API
+endpoint without native page navigation, and surfaces failure events. For an
+ordinary POST followed by browser navigation, use a native HTML form instead.
 
 **Properties**
 

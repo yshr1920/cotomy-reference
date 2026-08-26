@@ -78,7 +78,6 @@ class CotomyForm
 class CotomyApi
 
 CotomyElement <|-- CotomyForm
-CotomyForm ..> CotomyApi : submits
 CotomyPageController o-- CotomyForm : manages
 CotomyPageController ..> CotomyWindow : lifecycle
 ```
@@ -86,7 +85,7 @@ CotomyPageController ..> CotomyWindow : lifecycle
 | Layer | Role |
 | --- | --- |
 | **CotomyElement** | DOM abstraction, scoped CSS engine, lifecycle tracking, event registry integration |
-| **CotomyForm** | Structured form and API interaction model |
+| **CotomyForm** | Base for forms whose submission is controlled by Cotomy |
 | **CotomyPageController** | Page-level behavior orchestration |
 | **CotomyWindow** | App-wide lifecycle and navigation hooks |
 
@@ -123,19 +122,18 @@ Continue with [Use Cases](/use-cases/) for concrete examples, or go directly to 
 ---
 ## Quick Example
 
-This is the smallest useful mental model for Cotomy:
+Standard browser navigation does not require a Cotomy-managed form:
 
-```ts
-const form = new CotomyForm({
-  html: /* html */`<form><input name="code" /><button type="submit">Save</button></form>`
-});
-
-form.initialize();
+```html
+<form action="/items" method="post">
+  <input name="code" />
+  <button type="submit">Save</button>
+</form>
 ```
 
-- `CotomyForm` standardizes form and API interaction
-- Lifecycle and event cleanup are tracked by the runtime
-- The DOM remains the primary UI state
+Use CotomyForm or a specialized subclass when Cotomy must intercept submit and
+run a controlled query or API workflow. Native HTML forms remain the default
+for ordinary GET and POST page navigation.
 
 For the layer model behind this flow, see [Architecture](/architecture/).
 

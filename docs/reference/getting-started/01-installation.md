@@ -45,7 +45,6 @@ class CotomyForm
 class CotomyApi
 
 CotomyElement <|-- CotomyForm
-CotomyForm ..> CotomyApi : submits
 CotomyPageController o-- CotomyForm : manages
 CotomyPageController ..> CotomyWindow : lifecycle
 ```

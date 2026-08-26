@@ -9,6 +9,10 @@ Ajax Forms combine form submission, API communication, and automatic response
 rendering. They allow you to submit without page reload, load entity data into
 inputs, and apply API responses directly to the UI.
 
+Use CotomyApiForm or its entity-oriented subclasses for this controlled API
+workflow. An ordinary `<form method="post">` is different: the browser submits
+it and performs page navigation, so it does not need a CotomyForm.
+
 ## Goals
 
 - Submit without page reload
@@ -51,7 +55,7 @@ CotomyViewRenderer ..> ICotomyBindNameGenerator : bind names
 
 | Form | API submit | Entity key | Renderer | Auto fill | Notes |
 | --- | --- | --- | --- | --- | --- |
-| CotomyForm | No | No | No | No | Submit lifecycle only |
+| CotomyForm | No | No | No | No | Abstract base for a custom controlled submit lifecycle |
 | CotomyQueryForm | No | No | No | No | GET query navigation |
 | CotomyApiForm | Yes | No | No | No | Sends FormData to API |
 | CotomyEntityApiForm | Yes | Yes | No | No | POST to PUT by entity key |
